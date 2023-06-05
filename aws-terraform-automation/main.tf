@@ -41,4 +41,12 @@ resource "aws_security_group" "my_sg" {
   }
 }
 
+resource "aws_instance" "my_ec2_instance" {
+  ami                    = "ami-0c94855ba95c71c99"
+  instance_type          = "t2.micro"
+  vpc_security_group_ids = [aws_security_group.my_sg.id]
+  subnet_id              = aws_subnet.my_subnet.id
+}
+
+
 
