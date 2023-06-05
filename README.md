@@ -16,5 +16,5 @@ This project demonstrates infrastructure automation using Terraform to provision
    git clone https://github.com/Manu-Abuya/terraform-aws-infrastructure.git
 
 2. Change into the project directory:
-  ```
-  cd terraform-aws-infrastructure
+    ```
+    cd terraform-aws-infrastructure
